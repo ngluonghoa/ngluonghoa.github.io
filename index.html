@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="MFX Drive Cache is a private, owner-operated Forex research and engineering tool using limited Google Drive OAuth access.">
+  <title>MFX Drive Cache — About the App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="container header">
+    <a class="brand" href="/">MFX <span>Drive Cache</span></a>
+    <nav aria-label="Main navigation">
+      <a aria-current="page" href="/">About</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Private research application</p>
+      <h1>Secure, limited-access Google Drive storage for MFX.</h1>
+      <p class="lead">MFX Drive Cache is an owner-operated tool supporting a private Forex research and engineering project. GitHub Actions uses Google OAuth to manage application-specific files in the owner's Google Drive account.</p>
+    </section>
+    <section class="grid" aria-label="App features">
+      <article class="panel">
+        <h2>Limited Drive permission</h2>
+        <p>The application requests only the Google Drive <code>drive.file</code> permission, used to create, read, and update files that the application is allowed to access. It does not request general access to all Drive files.</p>
+      </article>
+      <article class="panel">
+        <h2>Private storage</h2>
+        <p>Application-managed files reside within the owner's personal Google Drive. Authentication is managed by Google OAuth, with credentials stored as GitHub Actions Secrets.</p>
+      </article>
+      <article class="panel">
+        <h2>Research, not brokerage</h2>
+        <p>Cache and test data support research and technical validation. This app does not place broker orders or provide a public trading service.</p>
+      </article>
+    </section>
+    <section class="panel details">
+      <h2>Why Google access is requested</h2>
+      <p>The app needs permission to create and verify application-owned storage folders, write and update JSON cache files, and read those files back to check integrity. Access is initiated by the account owner and may be revoked at any time.</p>
+      <p>For details on data handling, see our <a href="/privacy.html">Privacy Policy</a>. This website is informational; it does not provide an OAuth sign-in form or collect credentials.</p>
+    </section>
+  </main>
+  <footer class="container footer">
+    <span>MFX Drive Cache · Independent, owner-operated research utility</span>
+    <span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
+  </footer>
+</body>
+</html>
