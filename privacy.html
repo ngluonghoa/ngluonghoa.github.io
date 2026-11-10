@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the private MFX Drive Cache Google OAuth application.">
+  <title>Privacy Policy — MFX Drive Cache</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="container header">
+    <a class="brand" href="/">MFX <span>Drive Cache</span></a>
+    <nav aria-label="Main navigation">
+      <a href="/">About</a>
+      <a aria-current="page" href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </header>
+  <main class="container document">
+    <p class="eyebrow">Last updated: November 11, 2026</p>
+    <h1>Privacy Policy</h1>
+    <p>MFX Drive Cache is a private, owner-operated research application, not a public service. This policy describes how its Google OAuth integration accesses and handles Google user data.</p>
+
+    <h2>Google information accessed</h2>
+    <p>When the owner explicitly authorizes the application, it requests the Google Drive <code>drive.file</code> OAuth scope. This permits it to create new Drive files and to view or modify files authorized for use with the application. It does not request full Google Drive access, Gmail messages, Contacts, or Calendar data.</p>
+
+    <h2>Purpose and use</h2>
+    <p>The application creates its own Drive folders and JSON files for synthetic connectivity checks, cache integrity tests, and permitted private research data. It reads back file content and metadata to validate saved data and consistency. The app does not use Google Drive data for advertising, profiling, or selling user information.</p>
+
+    <h2>Storage and service providers</h2>
+    <p>Application-managed JSON files are stored in the owner's Google Drive account. GitHub Actions runs the application's cloud code and stores OAuth client credentials and refresh tokens in repository Actions Secrets. Diagnostic workflow logs may contain non-secret file identifiers, checksums, status messages, and execution details. Google and GitHub process data as infrastructure providers under their own terms and policies. This informational website has no sign-in form, analytics script, or advertising tracker.</p>
+
+    <h2>Sharing</h2>
+    <p>The app does not sell personal data or intentionally make the owner's application-managed Drive files public. Data is processed by Google Drive and GitHub Actions as necessary to provide the private functionality. MFX does not provide a public data-sharing service.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Files remain in the owner's Google Drive until the owner deletes them. The owner can revoke this app's Google permissions from their Google Account's third-party connection settings, remove its GitHub Actions Secrets, and delete the application-managed Drive files. Revoking access stops future authorized access but does not automatically delete previously stored files or prior workflow logs.</p>
+
+    <h2>Security</h2>
+    <p>OAuth tokens are not placed on this public website or committed to source control. Application access uses HTTPS and scoped Google permissions. No internet-connected service can promise absolute security.</p>
+
+    <h2>Changes and contact</h2>
+    <p>This policy may be updated as the application's behavior changes. Material changes will be reflected on this page. To contact the project maintainer, visit the <a href="https://github.com/ngluonghoa/ngluonghoa.github.io/issues">GitHub repository issue tracker</a>. Do not publish credentials or private Drive data in issues.</p>
+  </main>
+  <footer class="container footer"><a href="/">MFX Drive Cache</a><a href="/terms.html">Terms</a></footer>
+</body>
+</html>
