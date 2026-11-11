@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Privacy Policy for MST Cloud Drive and its limited Google Drive OAuth integration.">
+  <title>Privacy Policy — MST Cloud Drive</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="container header">
+    <a class="brand" href="/mst/">MST <span>Cloud Drive</span></a>
+    <nav aria-label="MST navigation">
+      <a href="/mst/">About</a>
+      <a aria-current="page" href="/mst/privacy.html">Privacy Policy</a>
+      <a href="/mst/terms.html">Terms</a>
+    </nav>
+  </header>
+  <main class="container document">
+    <p class="eyebrow">Last updated: November 11, 2026</p>
+    <h1>Privacy Policy</h1>
+    <p>MST Cloud Drive is a private, owner-operated engineering and research utility, not a public trading service. This policy describes the app's intended limited use of Google user data. The OAuth and Google Drive GitHub Actions integration is staged, and production market-data automation is not yet active.</p>
+    <h2>Google information accessed</h2>
+    <p>When the account owner explicitly authorizes the integration, the application requests Google Drive's <code>drive.file</code> scope. It can create new files and access specific files created by, opened with, or selected for the app as permitted by Google. It does not request general read access to all Google Drive files or access to Gmail, Contacts, or Calendar.</p>
+    <h2>Purpose and data use</h2>
+    <p>Owner-authorized Drive files may include application-created folders, synthetic connectivity and integrity test JSON files, and subsequently approved private research cache data. The app reads file content or metadata when necessary to verify integrity and consistency. It does not use Google user data for advertising, profiling, or selling personal information. Existing owner-created Watchlist Sheets are not automatically accessible to the OAuth app.</p>
+    <h2>Storage, service providers, and access</h2>
+    <p>Data that the owner separately approves for persistence resides in the owner's own Google Drive. GitHub Actions runs the cloud workflows and stores any configured OAuth Client Secret and Refresh Token in private repository Actions Secrets. Limited workflow diagnostics may record non-secret status, checksums, and sanitized audit results; the app is designed not to publish access tokens or personal research data to logs. Google and GitHub provide supporting infrastructure under their respective terms.</p>
+    <h2>Sharing and disclosure</h2>
+    <p>The application does not intentionally make private Drive data public, sell user data, or provide an advertising data-sharing service. Google Drive and GitHub process information as necessary to operate these authorized workflows. No broad public sharing permission is requested by this website.</p>
+    <h2>Retention, withdrawal, and deletion</h2>
+    <p>Files created by the app remain in the owner's Google Drive until the owner removes them or a separately approved retention policy applies. The owner may revoke Google's third-party application permission, remove GitHub Actions Secrets, and delete application-managed folders and files. Revoking OAuth access stops future authorized requests but does not automatically delete preexisting files or historical diagnostic logs.</p>
+    <h2>Website privacy and security</h2>
+    <p>This public informational website has no sign-in form, OAuth callback handler, analytics trackers, or advertising scripts. No OAuth token, private Drive file ID, financial account credential, or market research dataset should be submitted through this site. Google OAuth uses HTTPS. No online service can guarantee absolute security.</p>
+    <h2>Changes and contact</h2>
+    <p>This policy will be updated if data handling changes. To contact the developer, use the <a href="https://github.com/ngluonghoa/MST/issues">MST GitHub issue tracker</a>; never post credentials, tokens, or private files in a public issue.</p>
+  </main>
+  <footer class="container footer"><a href="/mst/">MST Cloud Drive</a><a href="/mst/terms.html">Terms</a></footer>
+</body>
+</html>
